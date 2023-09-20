@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h1>Bitte füllen Sie das Formular vollständig aus.</h1>
+    <hr>
+    <form action="">
+
+    <section class="section1">
+        <h3>Kontoinformationen</h3>
+        <div>
+            <label for="username">Benutzername</label>
+            <span>:</span>
+            <input type="text" id="username" name="username" placeholder="Geben Sie Ihren Benutzernamen ein" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <span>:</span>
+            <input type="email" id="email" name="email" placeholder="E-Mail eingeben">
+        </div>
+        <div>
+            <label for="password">Passwort</label>
+            <span>:</span>
+            <input type="password" id="password" name="password" placeholder="Passwort eingeben">
+        </div>
+    </section>
+
+    <section class="section2">
+        <h3>Persönliche Informationen</h3>
+        <div>
+            <label for="vorname">Vorname</label>
+            <span>:</span>
+            <input type="text" id="vorname" name="vorname">
+        </div>
+        <div>
+            <label for="nachname">Nachname</label>
+            <span>:</span>
+            <input type="text" id="nachname" name="nachname">
+        </div>
+        <div>
+            <label for="sehir">Stadt</label>
+            <span>:</span>
+            <select id="sehir" name="sehir">
+                <option value="sec" selected disabled>Auswählen</option>
+                <option value="Duisburg">Duisburg</option>
+                <option value="Köln">Köln</option>
+                <option value="Düsseldorf">Düsseldorf</option>
+                <option value="Dortmund">Dortmund</option>
+              </select>
+        </div>
+        <div>
+            <label for="cinsiyet">Geschlecht</label>
+            <span>:</span>
+            <input type="radio" name="erkek" id="erkek">
+            <label for="erkek">Männlich</label>
+            <input type="radio" name="kadin" id="kadin">
+            <label for="kadin">Weiblich</label>
+        </div>
+        <div>
+            <label for="hobi">Hobbys</label>
+            <span>:</span>
+            <input type="checkbox" name="Kino" id="Kino">
+            <label for="Kino">Kino</label>
+            <input type="checkbox" name="Theatre" id="Theatre">
+            <label for="Theatre">Theatre</label>
+            <input type="checkbox" name="Sport" id="Sport">
+            <label for="Sport">Sport</label>
+            <input type="checkbox" name="Buch" id="Buch">
+            <label for="Buch">Buch</label>
+        </div>
+        <div class="button">
+            <input type="submit" value="Speichern">
+            <input type="reset" value="Reset" id="reset">
+        </div>
+    </section>
+</form>
+</body>
+</html>
